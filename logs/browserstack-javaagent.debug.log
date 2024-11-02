@@ -1,0 +1,1007 @@
+16:26:16.002 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=C\:\\Users\\krish\\Documents\\junit-browserstack-master (1)\\junit-browserstack-master\\junit-5, user.dir=C\:\\Users\\krish\\Documents\\junit-browserstack-master (1)\\junit-browserstack-master\\junit-5, localrepository=C\:\\Users\\krish\\.m2\\repository}
+16:26:16.314 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+16:26:16.314 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+16:26:16.321 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Found the configuration path is : surefire6615338220373624202tmp
+16:26:16.322 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Coudln't find config path surefire6615338220373624202tmp
+16:26:16.322 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+16:26:16.324 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for INT
+16:26:16.324 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for TERM
+16:26:16.324 [main] DEBUG c.b.utils.ExitSignalHandler - Unable to attach signal handler for HUP Unknown signal: HUP
+16:26:16.324 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for ABRT
+16:26:16.714 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+16:26:16.943 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 227ms
+16:26:18.177 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 1228ms
+16:26:19.508 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 1330ms
+16:26:19.510 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+16:26:19.522 [main] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestAttempted with data: {"event_type":"SDKTestAttempted","accessKey":"YOUR_ACCESS_KEY","userName":"YOUR_USERNAME","event_properties":{"product":"[automate]","buildName":"browserstack build","os":"Windows 11","languageVersion":"17.0.3","appiumVersion":"","frameworkDetectionInstrumentation":{},"language":"java","sdkRunId":"7bcb601f-c866-45f3-afd7-1fa3d89bf199","buildIdentifier":"#1","userFramework":"junit5","testhub_uuid":"","detectedAppiumVersion":"null","detectedDependencies":"junit5","productMap":{"app_automate":false,"accessibility":false,"automate":true,"percy":false,"observability":false},"referrer":"junit5-javaagent\/1.21.1","hostname":"Manas","language_framework":"java_junit5","detectedFramework":"none","detectedSeleniumVersion":"4.1.4","seleniumVersion":"4.1.4"}}
+16:26:20.021 [main] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestAttempted response - {"message":"Unauthorized"}
+16:26:20.031 [main] DEBUG c.browserstack.utils.UtilityMethods - Exception in getting the framework version. Error: java.lang.NullPointerException: Cannot invoke "String.split(String)" because "<parameter1>" is null
+16:26:20.034 [main] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind launchTestSession
+16:26:20.034 [main] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: POST api/v2/builds with request size 730
+16:26:21.368 [main] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 200
+16:26:21.369 [main] DEBUG com.browserstack.testOps.Listener - BROWSERSTACK_TESTHUB_UUID : c5mchunyxrz5zpylncgc9ktgkm3lootnz72nfts8
+16:26:21.369 [main] DEBUG com.browserstack.testOps.Listener - [ TESTHUB ] Build creation successfull
+16:26:21.372 [main] DEBUG com.browserstack.LocalFactory - Starting BrowserStack Local with identifier 20_Aug_1626_Manas_dtlD
+16:26:25.098 [Thread-0] DEBUG c.browserstack.BrowserStackJavaAgent - Starting final execution
+16:26:25.101 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+16:26:25.102 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind stopBuildUpstream
+16:26:25.104 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: PUT api/v1/builds/c5mchunyxrz5zpylncgc9ktgkm3lootnz72nfts8/stop with request size 65
+16:26:25.448 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 401
+16:26:25.448 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [OBSERVABILITY] Non-200 Response 401
+16:26:25.450 [Thread-0] DEBUG c.browserstack.utils.LogReportingAPI - Observability Stop request failed. Retrying.. Exception: com.browserstack.testOps.RequestException: Non 200 response
+	at com.browserstack.testOps.RequestException.non200(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOps(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOpsString(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.stop(Unknown Source)
+	at com.browserstack.testOps.Listener.onComplete(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.browserstack.utils.ConditionalInvocationHandler.invoke(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy2.onComplete(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+16:26:26.370 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event Observability_Crash_Report_Upload response - OK
+16:26:26.371 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: PUT api/v1/builds/c5mchunyxrz5zpylncgc9ktgkm3lootnz72nfts8/stop with request size 65
+16:26:26.696 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 401
+16:26:26.696 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [OBSERVABILITY] Non-200 Response 401
+16:26:26.696 [Thread-0] DEBUG c.browserstack.utils.LogReportingAPI - 
+[2024-08-20T10:56:26.696673300Z][ TESTHUB ] Exception in stop build request : com.browserstack.testOps.RequestException: Non 200 response
+	at com.browserstack.testOps.RequestException.non200(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOps(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOpsString(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.stop(Unknown Source)
+	at com.browserstack.testOps.Listener.onComplete(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.browserstack.utils.ConditionalInvocationHandler.invoke(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy2.onComplete(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+
+16:26:27.606 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event Observability_Crash_Report_Upload response - OK
+16:26:27.608 [Thread-0] DEBUG com.browserstack.testOps.UsageStats - getFormattedData: Collecting data for TestObservability
+16:26:27.645 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestSuccessful with data: {"event_type":"SDKTestSuccessful","accessKey":"YOUR_ACCESS_KEY","userName":"YOUR_USERNAME","event_properties":{"product":"[automate]","buildName":"browserstack build","globalException":"Initialization of BrowserStack Local failed Disconnected.","os":"Windows 11","languageVersion":"17.0.3","appiumVersion":"","frameworkDetectionInstrumentation":{},"language":"java","sdkRunId":"7bcb601f-c866-45f3-afd7-1fa3d89bf199","buildIdentifier":"#1","userFramework":"junit5","testhub_uuid":"c5mchunyxrz5zpylncgc9ktgkm3lootnz72nfts8","detectedAppiumVersion":"null","detectedDependencies":"junit5","productMap":{"app_automate":false,"accessibility":false,"automate":true,"percy":false,"observability":false},"referrer":"junit5-javaagent\/1.21.1","hostname":"Manas","language_framework":"java_junit5","detectedFramework":"none","productUsage":{"testObservability":{"buildHashedId":"c5mchunyxrz5zpylncgc9ktgkm3lootnz72nfts8","manuallySet":false,"enabled":false}},"detectedSeleniumVersion":"4.1.4","browserStackConfig":{"browserstackLocal":true,"percy":false,"logLevel":"info","staticWebDriver":true,"autoDetectFramework":true,"percyCaptureMode":"MANUAL","browserStackLocalOptions":{"localIdentifier":"20_Aug_1626_Manas_dtlD","key":"****"},"percyOptions":null,"testContextOptions":{"skipSessionStatus":false,"serenityOverridePlugin":false,"skipSessionName":false},"platforms":[{"capabilities":{},"os":"OS X","browser":"Chrome","osVersion":"Big Sur","device":null,"browserVersion":"latest","platformCaps":{"os":"OS X","osVersion":"Big Sur","browserVersion":"latest","browserName":"Chrome"},"platformString":"OS X, Big Sur, Chrome, latest","customVariables":"****"},{"capabilities":{},"os":"Windows","browser":"Edge","osVersion":"10","device":null,"browserVersion":"latest","platformCaps":{"os":"Windows","osVersion":10,"browserVersion":"latest","browserName":"Edge"},"platformString":"Windows, 10, Edge, latest","customVariables":"****"},{"capabilities":{"deviceName":"Samsung Galaxy S22 Ultra"},"os":null,"browser":"chrome","osVersion":"12.0","device":"Samsung Galaxy S22 Ultra","browserVersion":null,"platformCaps":{"osVersion":12.0,"browserName":"chrome","deviceName":"Samsung Galaxy S22 Ultra"},"platformString":"Samsung Galaxy S22 Ultra, 12.0, chrome","customVariables":"****"}],"parallelsPerPlatform":1,"framework":"junit5","accessibility":false,"accessibilityOptions":{},"turboScaleOptions":{},"disableAutoCaptureLogs":true,"testObservability":true,"browserstackAutomation":true,"turboScale":false,"testObservabilityOptions":{},"gradleMConfig":null,"proxySettings":null},"seleniumVersion":"4.1.4"}}
+16:26:27.932 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestSuccessful response - {"message":"Unauthorized"}
+16:26:28.961 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - unable to upload logs : 401
+16:26:29.954 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Execute API call to get build details failed - Unexpected character (H) at position 0.
+16:26:29.955 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack Gradle-M Config File does not exist.
+16:27:46.855 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+16:27:47.444 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+16:27:47.445 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+16:27:48.258 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Java command - org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 64673 -testLoaderClass org.eclipse.jdt.internal.junit5.runner.JUnit5TestLoader -loaderpluginname org.eclipse.jdt.junit5.runtime -classNames tests.BStackLocalTest
+16:27:48.258 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Test classes detected: tests.BStackLocalTest
+16:27:48.292 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Runner: junit5, Engine: none
+16:27:48.322 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Runner: junit5, Engine: none from dependencies
+16:27:48.322 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Detected final framework as: junit5
+16:27:48.322 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+16:27:48.326 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for INT
+16:27:48.326 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for TERM
+16:27:48.326 [main] DEBUG c.b.utils.ExitSignalHandler - Unable to attach signal handler for HUP Unknown signal: HUP
+16:27:48.326 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for ABRT
+16:27:48.829 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+16:27:49.063 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 232ms
+16:27:50.131 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 1065ms
+16:27:51.361 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 1229ms
+16:27:51.362 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+16:27:51.377 [main] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestAttempted with data: {"event_type":"SDKTestAttempted","accessKey":"YOUR_ACCESS_KEY","userName":"YOUR_USERNAME","event_properties":{"product":"[automate]","buildName":"browserstack build","os":"Windows 11","languageVersion":"17.0.3","appiumVersion":"","frameworkDetectionInstrumentation":{"parseLoadClass":32,"parseDependencies":30},"language":"java","sdkRunId":"f370b835-d69b-4ee2-88be-6620ef9a7cdb","buildIdentifier":"#2","userFramework":"junit5","testhub_uuid":"","detectedAppiumVersion":"null","detectedDependencies":"","productMap":{"app_automate":false,"accessibility":false,"automate":true,"percy":false,"observability":false},"referrer":"junit5-javaagent\/1.21.1","hostname":"Manas","language_framework":"java_junit5","detectedFramework":"junit5","detectedSeleniumVersion":"4.1.4","seleniumVersion":"4.1.4"}}
+16:27:51.785 [main] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestAttempted response - {"message":"Unauthorized"}
+16:27:51.799 [main] DEBUG c.browserstack.utils.UtilityMethods - Exception in getting the framework version. Error: java.lang.NullPointerException: Cannot invoke "String.split(String)" because "<parameter1>" is null
+16:27:51.804 [main] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind launchTestSession
+16:27:51.804 [main] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: POST api/v2/builds with request size 730
+16:27:53.105 [main] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 200
+16:27:53.105 [main] DEBUG com.browserstack.testOps.Listener - BROWSERSTACK_TESTHUB_UUID : pvlawd5lrcn0fhijkh9aollx6elxbugtam2fxdpq
+16:27:53.108 [main] DEBUG com.browserstack.testOps.Listener - [ TESTHUB ] Build creation successfull
+16:27:53.111 [main] DEBUG com.browserstack.LocalFactory - Starting BrowserStack Local with identifier 20_Aug_1627_Manas_tUgV
+16:27:56.362 [Thread-0] DEBUG c.browserstack.BrowserStackJavaAgent - Starting final execution
+16:27:56.364 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+16:27:56.368 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind stopBuildUpstream
+16:27:56.370 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: PUT api/v1/builds/pvlawd5lrcn0fhijkh9aollx6elxbugtam2fxdpq/stop with request size 65
+16:27:56.592 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 401
+16:27:56.592 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [OBSERVABILITY] Non-200 Response 401
+16:27:56.595 [Thread-0] DEBUG c.browserstack.utils.LogReportingAPI - Observability Stop request failed. Retrying.. Exception: com.browserstack.testOps.RequestException: Non 200 response
+	at com.browserstack.testOps.RequestException.non200(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOps(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOpsString(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.stop(Unknown Source)
+	at com.browserstack.testOps.Listener.onComplete(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.browserstack.utils.ConditionalInvocationHandler.invoke(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy3.onComplete(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+16:27:57.402 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event Observability_Crash_Report_Upload response - OK
+16:27:57.402 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: PUT api/v1/builds/pvlawd5lrcn0fhijkh9aollx6elxbugtam2fxdpq/stop with request size 65
+16:27:57.724 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 401
+16:27:57.724 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [OBSERVABILITY] Non-200 Response 401
+16:27:57.724 [Thread-0] DEBUG c.browserstack.utils.LogReportingAPI - 
+[2024-08-20T10:57:57.724580100Z][ TESTHUB ] Exception in stop build request : com.browserstack.testOps.RequestException: Non 200 response
+	at com.browserstack.testOps.RequestException.non200(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOps(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOpsString(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.stop(Unknown Source)
+	at com.browserstack.testOps.Listener.onComplete(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.browserstack.utils.ConditionalInvocationHandler.invoke(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy3.onComplete(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+
+16:27:58.554 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event Observability_Crash_Report_Upload response - OK
+16:27:58.561 [Thread-0] DEBUG com.browserstack.testOps.UsageStats - getFormattedData: Collecting data for TestObservability
+16:27:58.605 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestSuccessful with data: {"event_type":"SDKTestSuccessful","accessKey":"YOUR_ACCESS_KEY","userName":"YOUR_USERNAME","event_properties":{"product":"[automate]","buildName":"browserstack build","globalException":"Initialization of BrowserStack Local failed Disconnected.","os":"Windows 11","languageVersion":"17.0.3","appiumVersion":"","frameworkDetectionInstrumentation":{"parseLoadClass":32,"parseDependencies":30},"language":"java","sdkRunId":"f370b835-d69b-4ee2-88be-6620ef9a7cdb","buildIdentifier":"#2","userFramework":"junit5","testhub_uuid":"pvlawd5lrcn0fhijkh9aollx6elxbugtam2fxdpq","detectedAppiumVersion":"null","detectedDependencies":"","productMap":{"app_automate":false,"accessibility":false,"automate":true,"percy":false,"observability":false},"referrer":"junit5-javaagent\/1.21.1","hostname":"Manas","language_framework":"java_junit5","detectedFramework":"junit5","productUsage":{"testObservability":{"buildHashedId":"pvlawd5lrcn0fhijkh9aollx6elxbugtam2fxdpq","manuallySet":false,"enabled":false}},"detectedSeleniumVersion":"4.1.4","browserStackConfig":{"browserstackLocal":true,"percy":false,"logLevel":"info","staticWebDriver":true,"autoDetectFramework":true,"percyCaptureMode":"MANUAL","browserStackLocalOptions":{"localIdentifier":"20_Aug_1627_Manas_tUgV","key":"****"},"percyOptions":null,"testContextOptions":{"skipSessionStatus":false,"serenityOverridePlugin":false,"skipSessionName":false},"platforms":[{"os":"OS X","osVersion":"Big Sur","device":null,"browserVersion":"latest","browser":"Chrome","capabilities":{},"platformCaps":{"os":"OS X","osVersion":"Big Sur","browserVersion":"latest","browserName":"Chrome"},"platformString":"OS X, Big Sur, Chrome, latest","customVariables":"****"},{"os":"Windows","osVersion":"10","device":null,"browserVersion":"latest","browser":"Edge","capabilities":{},"platformCaps":{"os":"Windows","osVersion":10,"browserVersion":"latest","browserName":"Edge"},"platformString":"Windows, 10, Edge, latest","customVariables":"****"},{"os":null,"osVersion":"12.0","device":"Samsung Galaxy S22 Ultra","browserVersion":null,"browser":"chrome","capabilities":{"deviceName":"Samsung Galaxy S22 Ultra"},"platformCaps":{"osVersion":12.0,"browserName":"chrome","deviceName":"Samsung Galaxy S22 Ultra"},"platformString":"Samsung Galaxy S22 Ultra, 12.0, chrome","customVariables":"****"}],"parallelsPerPlatform":1,"framework":"junit5","accessibility":false,"accessibilityOptions":{},"turboScaleOptions":{},"disableAutoCaptureLogs":true,"testObservability":true,"browserstackAutomation":true,"turboScale":false,"testObservabilityOptions":{},"gradleMConfig":null,"proxySettings":null},"seleniumVersion":"4.1.4"}}
+16:27:58.930 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestSuccessful response - {"message":"Unauthorized"}
+16:27:59.886 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - unable to upload logs : 401
+16:28:00.261 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Execute API call to get build details failed - Unexpected character (H) at position 0.
+16:28:00.261 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack Gradle-M Config File does not exist.
+16:28:38.652 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+16:28:38.926 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+16:28:38.926 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+16:28:39.346 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Java command - org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 51057 -testLoaderClass org.eclipse.jdt.internal.junit5.runner.JUnit5TestLoader -loaderpluginname org.eclipse.jdt.junit5.runtime -classNames tests.BStackLocalTest
+16:28:39.346 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Test classes detected: tests.BStackLocalTest
+16:28:39.353 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Runner: junit5, Engine: none
+16:28:39.379 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Runner: junit5, Engine: none from dependencies
+16:28:39.380 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Detected final framework as: junit5
+16:28:39.380 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+16:28:39.382 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for INT
+16:28:39.383 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for TERM
+16:28:39.383 [main] DEBUG c.b.utils.ExitSignalHandler - Unable to attach signal handler for HUP Unknown signal: HUP
+16:28:39.383 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for ABRT
+16:28:39.783 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+16:28:39.996 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 211ms
+16:28:41.125 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 1126ms
+16:28:42.256 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 1130ms
+16:28:42.257 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+16:28:42.276 [main] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestAttempted with data: {"event_type":"SDKTestAttempted","accessKey":"YOUR_ACCESS_KEY","userName":"YOUR_USERNAME","event_properties":{"product":"[automate]","buildName":"browserstack build","os":"Windows 11","languageVersion":"17.0.3","appiumVersion":"","frameworkDetectionInstrumentation":{"parseLoadClass":5,"parseDependencies":26},"language":"java","sdkRunId":"6dc60873-b097-40b5-92c3-0c9de33a0537","buildIdentifier":"#3","userFramework":"junit5","testhub_uuid":"","detectedAppiumVersion":"null","detectedDependencies":"","productMap":{"app_automate":false,"accessibility":false,"automate":true,"percy":false,"observability":false},"referrer":"junit5-javaagent\/1.21.1","hostname":"Manas","language_framework":"java_junit5","detectedFramework":"junit5","detectedSeleniumVersion":"4.1.4","seleniumVersion":"4.1.4"}}
+16:28:42.677 [main] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestAttempted response - {"message":"Unauthorized"}
+16:28:42.694 [main] DEBUG c.browserstack.utils.UtilityMethods - Exception in getting the framework version. Error: java.lang.NullPointerException: Cannot invoke "String.split(String)" because "<parameter1>" is null
+16:28:42.697 [main] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind launchTestSession
+16:28:42.698 [main] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: POST api/v2/builds with request size 730
+16:28:43.791 [main] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 200
+16:28:43.792 [main] DEBUG com.browserstack.testOps.Listener - BROWSERSTACK_TESTHUB_UUID : lawl72iz1cfglcb0faeir8tmbiavukmawnkfm2uj
+16:28:43.794 [main] DEBUG com.browserstack.testOps.Listener - [ TESTHUB ] Build creation successfull
+16:28:45.396 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+16:28:45.409 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+16:28:45.622 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+16:28:46.017 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+16:28:46.017 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+16:28:46.018 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+16:28:46.060 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+16:28:46.060 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+16:28:46.060 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+16:28:46.201 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+16:28:46.201 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+16:28:46.201 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+16:28:46.574 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+16:28:46.605 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+16:28:46.731 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+16:28:46.853 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 276ms
+16:28:46.860 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 247ms
+16:28:46.963 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 229ms
+16:28:47.712 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 856ms
+16:28:47.772 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 909ms
+16:28:47.781 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 815ms
+16:28:49.010 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 1297ms
+16:28:49.010 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 1237ms
+16:28:49.011 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 1229ms
+16:28:49.017 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+16:28:49.018 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+16:28:49.038 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+16:28:54.376 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+16:28:54.377 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - beforeDriverInit: SDK enabled. Thread ID: 24
+16:28:54.379 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+16:28:54.422 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+16:28:54.423 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - beforeDriverInit: SDK enabled. Thread ID: 24
+16:28:54.427 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+16:28:54.434 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+16:28:54.435 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - beforeDriverInit: SDK enabled. Thread ID: 24
+16:28:54.437 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+16:28:55.865 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Serenity
+16:28:55.865 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+16:28:55.894 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Serenity
+16:28:55.894 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+16:28:55.921 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Serenity
+16:28:55.921 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+16:28:56.495 [Thread-0] DEBUG c.browserstack.BrowserStackJavaAgent - Starting final execution
+16:28:56.496 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+16:28:56.500 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind stopBuildUpstream
+16:28:56.500 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: PUT api/v1/builds/lawl72iz1cfglcb0faeir8tmbiavukmawnkfm2uj/stop with request size 65
+16:28:56.757 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 401
+16:28:56.758 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [OBSERVABILITY] Non-200 Response 401
+16:28:56.759 [Thread-0] DEBUG c.browserstack.utils.LogReportingAPI - Observability Stop request failed. Retrying.. Exception: com.browserstack.testOps.RequestException: Non 200 response
+	at com.browserstack.testOps.RequestException.non200(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOps(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOpsString(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.stop(Unknown Source)
+	at com.browserstack.testOps.Listener.onComplete(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.browserstack.utils.ConditionalInvocationHandler.invoke(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy3.onComplete(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+16:28:57.716 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event Observability_Crash_Report_Upload response - OK
+16:28:57.716 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: PUT api/v1/builds/lawl72iz1cfglcb0faeir8tmbiavukmawnkfm2uj/stop with request size 65
+16:28:58.025 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 401
+16:28:58.025 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [OBSERVABILITY] Non-200 Response 401
+16:28:58.025 [Thread-0] DEBUG c.browserstack.utils.LogReportingAPI - 
+[2024-08-20T10:58:58.025789200Z][ TESTHUB ] Exception in stop build request : com.browserstack.testOps.RequestException: Non 200 response
+	at com.browserstack.testOps.RequestException.non200(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOps(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOpsString(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.stop(Unknown Source)
+	at com.browserstack.testOps.Listener.onComplete(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.browserstack.utils.ConditionalInvocationHandler.invoke(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy3.onComplete(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+
+16:28:58.946 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event Observability_Crash_Report_Upload response - OK
+16:28:59.005 [Thread-0] DEBUG com.browserstack.testOps.UsageStats - getFormattedData: Collecting data for TestObservability
+16:28:59.047 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestSuccessful with data: {"event_type":"SDKTestSuccessful","accessKey":"YOUR_ACCESS_KEY","userName":"YOUR_USERNAME","event_properties":{"product":"[automate]","buildName":"browserstack build","os":"Windows 11","languageVersion":"17.0.3","appiumVersion":"","frameworkDetectionInstrumentation":{"parseLoadClass":5,"parseDependencies":26},"language":"java","sdkRunId":"6dc60873-b097-40b5-92c3-0c9de33a0537","buildIdentifier":"#3","userFramework":"junit5","testhub_uuid":"lawl72iz1cfglcb0faeir8tmbiavukmawnkfm2uj","detectedAppiumVersion":"null","detectedDependencies":"","productMap":{"app_automate":false,"accessibility":false,"automate":true,"percy":false,"observability":false},"referrer":"junit5-javaagent\/1.21.1","hostname":"Manas","measures":{"sdk:setup":4507},"language_framework":"java_junit5","detectedFramework":"junit5","productUsage":{"testObservability":{"buildHashedId":"lawl72iz1cfglcb0faeir8tmbiavukmawnkfm2uj","manuallySet":false,"enabled":false}},"detectedSeleniumVersion":"4.1.4","browserStackConfig":{"browserstackLocal":false,"percy":false,"logLevel":"info","staticWebDriver":true,"autoDetectFramework":true,"percyCaptureMode":"MANUAL","browserStackLocalOptions":null,"percyOptions":null,"testContextOptions":{"skipSessionStatus":false,"serenityOverridePlugin":false,"skipSessionName":false},"platforms":[{"capabilities":{},"os":"OS X","osVersion":"Big Sur","browserVersion":"latest","browser":"Chrome","device":null,"platformCaps":{"os":"OS X","osVersion":"Big Sur","browserVersion":"latest","browserName":"Chrome"},"platformString":"OS X, Big Sur, Chrome, latest","customVariables":"****"},{"capabilities":{},"os":"Windows","osVersion":"10","browserVersion":"latest","browser":"Edge","device":null,"platformCaps":{"os":"Windows","osVersion":10,"browserVersion":"latest","browserName":"Edge"},"platformString":"Windows, 10, Edge, latest","customVariables":"****"},{"capabilities":{"deviceName":"Samsung Galaxy S22 Ultra"},"os":null,"osVersion":"12.0","browserVersion":null,"browser":"chrome","device":"Samsung Galaxy S22 Ultra","platformCaps":{"osVersion":12.0,"browserName":"chrome","deviceName":"Samsung Galaxy S22 Ultra"},"platformString":"Samsung Galaxy S22 Ultra, 12.0, chrome","customVariables":"****"}],"parallelsPerPlatform":1,"framework":"junit5","accessibility":false,"accessibilityOptions":{},"turboScaleOptions":{},"disableAutoCaptureLogs":true,"testObservability":true,"browserstackAutomation":true,"turboScale":false,"testObservabilityOptions":{},"gradleMConfig":null,"proxySettings":null},"seleniumVersion":"4.1.4"}}
+16:28:59.353 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestSuccessful response - {"message":"Unauthorized"}
+16:29:00.307 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - unable to upload logs : 401
+16:29:00.624 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Execute API call to get build details failed - Unexpected character (H) at position 0.
+16:29:00.625 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack Gradle-M Config File does not exist.
+16:54:03.565 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+16:54:03.907 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+16:54:03.907 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+16:54:04.328 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Java command - org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 51810 -testLoaderClass org.eclipse.jdt.internal.junit5.runner.JUnit5TestLoader -loaderpluginname org.eclipse.jdt.junit5.runtime -classNames tests.BStackLocalTest
+16:54:04.328 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Test classes detected: tests.BStackLocalTest
+16:54:04.358 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Runner: junit5, Engine: none
+16:54:04.395 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Runner: junit5, Engine: none from dependencies
+16:54:04.395 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Detected final framework as: junit5
+16:54:04.395 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+16:54:04.398 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for INT
+16:54:04.398 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for TERM
+16:54:04.398 [main] DEBUG c.b.utils.ExitSignalHandler - Unable to attach signal handler for HUP Unknown signal: HUP
+16:54:04.398 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for ABRT
+16:54:04.837 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+16:54:05.069 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 229ms
+16:54:06.126 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 1053ms
+16:54:07.590 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 1463ms
+16:54:07.591 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+16:54:07.613 [main] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestAttempted with data: {"event_type":"SDKTestAttempted","accessKey":"s6cWBXB7pjZA7h9zeJPT","userName":"sonalijha_I7Wkp4","event_properties":{"product":"[automate]","buildName":"browserstack build","os":"Windows 11","languageVersion":"17.0.3","appiumVersion":"","frameworkDetectionInstrumentation":{"parseLoadClass":27,"parseDependencies":36},"language":"java","sdkRunId":"9f1ce6bc-ca72-4a30-a37f-12acd31673c0","buildIdentifier":"#4","userFramework":"junit5","testhub_uuid":"","detectedAppiumVersion":"null","detectedDependencies":"","productMap":{"app_automate":false,"accessibility":false,"automate":true,"percy":false,"observability":false},"referrer":"junit5-javaagent\/1.21.1","hostname":"Manas","language_framework":"java_junit5","detectedFramework":"junit5","detectedSeleniumVersion":"4.1.4","seleniumVersion":"4.1.4"}}
+16:54:07.996 [main] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestAttempted response - {"message":"SDK Event recorded successfully"}
+16:54:08.016 [main] DEBUG c.browserstack.utils.UtilityMethods - Exception in getting the framework version. Error: java.lang.NullPointerException: Cannot invoke "String.split(String)" because "<parameter1>" is null
+16:54:08.021 [main] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind launchTestSession
+16:54:08.022 [main] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: POST api/v2/builds with request size 730
+16:54:09.147 [main] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 200
+16:54:09.148 [main] DEBUG com.browserstack.testOps.Listener - BROWSERSTACK_TESTHUB_UUID : goq1lrpro3lthj13zv7w9lhoodw8enezdvar74n2
+16:54:09.150 [main] DEBUG com.browserstack.testOps.Listener - [ TESTHUB ] Build creation successfull
+16:54:11.181 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+16:54:11.181 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+16:54:11.214 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+16:54:11.789 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+16:54:11.789 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+16:54:11.789 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+16:54:11.855 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+16:54:11.856 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+16:54:11.856 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+16:54:11.953 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+16:54:11.953 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+16:54:11.953 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+16:54:12.327 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+16:54:12.680 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+16:54:12.683 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+16:54:12.907 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 221ms
+16:54:12.979 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 527ms
+16:54:13.939 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 1027ms
+16:54:13.959 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 975ms
+16:54:14.031 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 1342ms
+16:54:14.873 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 839ms
+16:54:14.926 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 987ms
+16:54:14.928 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+16:54:14.933 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 974ms
+16:54:14.935 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+16:54:15.889 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 1015ms
+16:54:15.892 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-euw.browserstack.com
+16:54:20.980 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+16:54:20.980 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - beforeDriverInit: SDK enabled. Thread ID: 24
+16:54:20.995 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+16:54:21.058 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+16:54:21.058 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - beforeDriverInit: SDK enabled. Thread ID: 24
+16:54:21.058 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+16:54:21.683 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+16:54:21.683 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - beforeDriverInit: SDK enabled. Thread ID: 24
+16:54:21.683 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+16:54:25.120 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - OPTIMAL HUB IS: hub-euw.browserstack.com
+16:54:25.120 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - afterDriverInit: requested
+16:54:25.151 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+16:54:25.151 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-euw.browserstack.com/wd/hub
+16:54:28.197 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Serenity
+16:54:28.197 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+16:54:33.562 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - OPTIMAL HUB IS: hub-aps.browserstack.com
+16:54:33.562 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - afterDriverInit: requested
+16:54:33.609 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+16:54:33.624 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-aps.browserstack.com/wd/hub
+16:54:34.016 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - OPTIMAL HUB IS: hub-aps.browserstack.com
+16:54:34.016 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - afterDriverInit: requested
+16:54:34.064 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+16:54:34.064 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-aps.browserstack.com/wd/hub
+16:54:37.117 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Serenity
+16:54:37.117 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+16:54:42.910 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Serenity
+16:54:42.926 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+16:54:43.474 [Thread-0] DEBUG c.browserstack.BrowserStackJavaAgent - Starting final execution
+16:54:43.474 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+16:54:43.490 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind stopBuildUpstream
+16:54:43.490 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: PUT api/v1/builds/goq1lrpro3lthj13zv7w9lhoodw8enezdvar74n2/stop with request size 65
+16:54:43.740 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 401
+16:54:43.740 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [OBSERVABILITY] Non-200 Response 401
+16:54:43.776 [Thread-0] DEBUG c.browserstack.utils.LogReportingAPI - Observability Stop request failed. Retrying.. Exception: com.browserstack.testOps.RequestException: Non 200 response
+	at com.browserstack.testOps.RequestException.non200(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOps(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOpsString(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.stop(Unknown Source)
+	at com.browserstack.testOps.Listener.onComplete(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.browserstack.utils.ConditionalInvocationHandler.invoke(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy3.onComplete(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+16:54:44.526 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event Observability_Crash_Report_Upload response - OK
+16:54:44.526 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: PUT api/v1/builds/goq1lrpro3lthj13zv7w9lhoodw8enezdvar74n2/stop with request size 65
+16:54:44.839 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 401
+16:54:44.839 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [OBSERVABILITY] Non-200 Response 401
+16:54:44.839 [Thread-0] DEBUG c.browserstack.utils.LogReportingAPI - 
+[2024-08-20T11:24:44.839409100Z][ TESTHUB ] Exception in stop build request : com.browserstack.testOps.RequestException: Non 200 response
+	at com.browserstack.testOps.RequestException.non200(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOps(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOpsString(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.stop(Unknown Source)
+	at com.browserstack.testOps.Listener.onComplete(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.browserstack.utils.ConditionalInvocationHandler.invoke(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy3.onComplete(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+
+16:54:45.574 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event Observability_Crash_Report_Upload response - OK
+16:54:45.621 [Thread-0] DEBUG com.browserstack.testOps.UsageStats - getFormattedData: Collecting data for TestObservability
+16:54:45.668 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestSuccessful with data: {"event_type":"SDKTestSuccessful","accessKey":"s6cWBXB7pjZA7h9zeJPT","userName":"sonalijha_I7Wkp4","event_properties":{"product":"[automate]","buildName":"browserstack build","os":"Windows 11","languageVersion":"17.0.3","appiumVersion":"","frameworkDetectionInstrumentation":{"parseLoadClass":27,"parseDependencies":36},"language":"java","sdkRunId":"9f1ce6bc-ca72-4a30-a37f-12acd31673c0","buildIdentifier":"#4","error":"[{\"tests\":{\"tests.BStackLocalTest-localTest\":\"unknown error: net::ERR_CONNECTION_REFUSED   (Session info: chrome=127.0.6533.73) Build info: version: '4.1.4', revision: '535d840ee2' System info: host: 'MANAS', ip: '192.168.1.35', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3' Driver info: org.openqa.selenium.remote.RemoteWebDriver Command: [c3cff52a41cb2250110e2344e71deebce5509c1c, get {url=http:\\\/\\\/bs-local.com:45454\\\/}] Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: \\\/var\\\/folders\\\/yj\\\/h3bj394n2tn...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50465}, javascriptEnabled: true, networkConnectionEnabled: false, optimalHubUrl: hub-euw.browserstack.com, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: c3cff52a41cb2250110e2344e71...} Session ID: c3cff52a41cb2250110e2344e71deebce5509c1c\"},\"os\":\"OS X\",\"osVersion\":\"Big Sur\",\"browser\":\"Chrome\",\"browserVersion\":\"latest\",\"productUsage\":{\"testObservability\":{\"hookStartedStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"cbtSessionStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"logStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"testFinishedStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"batchStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"launchBuildUsage\":{\"triggered\":null,\"error\":null,\"status\":null},\"stopBuildUsage\":{\"triggered\":null,\"error\":null,\"status\":null},\"testStartedStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"hookFinishedStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0}}}},{\"tests\":{\"tests.BStackLocalTest-localTest\":\"unknown error: net::ERR_CONNECTION_REFUSED   (Session info: MicrosoftEdge=127.0.2651.74) Build info: version: '4.1.4', revision: '535d840ee2' System info: host: 'MANAS', ip: '192.168.1.35', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3' Driver info: org.openqa.selenium.remote.RemoteWebDriver Command: [a11b3fdd2b4793282bd43b2a99127bb8031c8e11, get {url=http:\\\/\\\/bs-local.com:45454\\\/}] Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 127.0.2651.74, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:3079}, msedge: {msedgedriverVersion: 127.0.2651.74 (dbf5b0aa014c..., userDataDir: C:\\\\Windows\\\\proxy\\\\scoped_dir...}, networkConnectionEnabled: false, optimalHubUrl: hub-aps.browserstack.com, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: a11b3fdd2b4793282bd43b2a991...} Session ID: a11b3fdd2b4793282bd43b2a99127bb8031c8e11\"},\"os\":\"Windows\",\"osVersion\":\"10\",\"browser\":\"Edge\",\"browserVersion\":\"latest\",\"productUsage\":{\"testObservability\":{\"hookStartedStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"cbtSessionStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"logStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"testFinishedStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"batchStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"launchBuildUsage\":{\"triggered\":null,\"error\":null,\"status\":null},\"stopBuildUsage\":{\"triggered\":null,\"error\":null,\"status\":null},\"testStartedStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"hookFinishedStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0}}}},{\"tests\":{\"tests.BStackLocalTest-localTest\":\"Local content not validated! ==> expected: <true> but was: <false>\"},\"osVersion\":\"12.0\",\"browser\":\"chrome\",\"productUsage\":{\"testObservability\":{\"hookStartedStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"cbtSessionStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"logStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"testFinishedStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"batchStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"launchBuildUsage\":{\"triggered\":null,\"error\":null,\"status\":null},\"stopBuildUsage\":{\"triggered\":null,\"error\":null,\"status\":null},\"testStartedStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"hookFinishedStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0}}},\"deviceName\":\"Samsung Galaxy S22 Ultra\"}]","userFramework":"junit5","testhub_uuid":"goq1lrpro3lthj13zv7w9lhoodw8enezdvar74n2","detectedAppiumVersion":"null","detectedDependencies":"","productMap":{"app_automate":false,"accessibility":false,"automate":true,"percy":false,"observability":false},"referrer":"junit5-javaagent\/1.21.1","hostname":"Manas","measures":{"sdk:setup":4722},"language_framework":"java_junit5","detectedFramework":"junit5","productUsage":{"testObservability":{"buildHashedId":"goq1lrpro3lthj13zv7w9lhoodw8enezdvar74n2","manuallySet":false,"enabled":false}},"detectedSeleniumVersion":"4.1.4","browserStackConfig":{"browserstackLocal":false,"percy":false,"logLevel":"info","staticWebDriver":true,"autoDetectFramework":true,"percyCaptureMode":"MANUAL","browserStackLocalOptions":null,"percyOptions":null,"testContextOptions":{"skipSessionName":false,"skipSessionStatus":false,"serenityOverridePlugin":false},"platforms":[{"capabilities":{},"browserVersion":"latest","device":null,"os":"OS X","osVersion":"Big Sur","browser":"Chrome","platformCaps":{"os":"OS X","osVersion":"Big Sur","browserVersion":"latest","browserName":"Chrome"},"platformString":"OS X, Big Sur, Chrome, latest","customVariables":"****"},{"capabilities":{},"browserVersion":"latest","device":null,"os":"Windows","osVersion":"10","browser":"Edge","platformCaps":{"os":"Windows","osVersion":10,"browserVersion":"latest","browserName":"Edge"},"platformString":"Windows, 10, Edge, latest","customVariables":"****"},{"capabilities":{"deviceName":"Samsung Galaxy S22 Ultra"},"browserVersion":null,"device":"Samsung Galaxy S22 Ultra","os":null,"osVersion":"12.0","browser":"chrome","platformCaps":{"osVersion":12.0,"browserName":"chrome","deviceName":"Samsung Galaxy S22 Ultra"},"platformString":"Samsung Galaxy S22 Ultra, 12.0, chrome","customVariables":"****"}],"parallelsPerPlatform":1,"framework":"junit5","accessibility":false,"accessibilityOptions":{},"turboScaleOptions":{},"disableAutoCaptureLogs":true,"testObservability":true,"browserstackAutomation":true,"turboScale":false,"testObservabilityOptions":{},"gradleMConfig":null,"proxySettings":null},"seleniumVersion":"4.1.4"}}
+16:54:46.078 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestSuccessful response - {"message":"SDK Event recorded successfully"}
+16:54:48.112 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Server side buildName(browserstack build  4) is not same as client side buildName(browserstack build #4)
+16:54:48.112 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack Gradle-M Config File does not exist.
+17:52:24.286 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+17:52:24.554 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+17:52:24.554 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+17:52:24.955 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Java command - org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 52659 -testLoaderClass org.eclipse.jdt.internal.junit5.runner.JUnit5TestLoader -loaderpluginname org.eclipse.jdt.junit5.runtime -classNames tests.BStackLocalTest
+17:52:24.955 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Test classes detected: tests.BStackLocalTest
+17:52:24.963 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Runner: junit5, Engine: none
+17:52:24.985 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Runner: junit5, Engine: none from dependencies
+17:52:24.985 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Detected final framework as: junit5
+17:52:24.985 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+17:52:24.987 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for INT
+17:52:24.987 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for TERM
+17:52:24.987 [main] DEBUG c.b.utils.ExitSignalHandler - Unable to attach signal handler for HUP Unknown signal: HUP
+17:52:24.987 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for ABRT
+17:52:25.475 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+17:52:25.773 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 296ms
+17:52:28.123 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 2346ms
+17:52:30.854 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 2730ms
+17:52:30.855 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+17:52:30.877 [main] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestAttempted with data: {"event_type":"SDKTestAttempted","accessKey":"s6cWBXB7pjZA7h9zeJPT","userName":"sonalijha_I7Wkp4","event_properties":{"product":"[automate]","buildName":"browserstack build","os":"Windows 11","languageVersion":"17.0.3","appiumVersion":"","frameworkDetectionInstrumentation":{"parseLoadClass":6,"parseDependencies":21},"language":"java","sdkRunId":"b2ca4c93-df93-4b11-9803-4dc5a9e3cb29","buildIdentifier":"#5","userFramework":"junit5","testhub_uuid":"","detectedAppiumVersion":"null","detectedDependencies":"","productMap":{"app_automate":false,"accessibility":false,"automate":true,"percy":false,"observability":false},"referrer":"junit5-javaagent\/1.21.1","hostname":"Manas","language_framework":"java_junit5","detectedFramework":"junit5","detectedSeleniumVersion":"4.1.4","seleniumVersion":"4.1.4"}}
+17:52:31.451 [main] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestAttempted response - {"message":"SDK Event recorded successfully"}
+17:52:31.474 [main] DEBUG c.browserstack.utils.UtilityMethods - Exception in getting the framework version. Error: java.lang.NullPointerException: Cannot invoke "String.split(String)" because "<parameter1>" is null
+17:52:31.478 [main] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind launchTestSession
+17:52:31.478 [main] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: POST api/v2/builds with request size 730
+17:52:33.337 [main] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 200
+17:52:33.337 [main] DEBUG com.browserstack.testOps.Listener - BROWSERSTACK_TESTHUB_UUID : ayufti399a9zhqluxhiurcp232uvwyovvdk8fedu
+17:52:33.340 [main] DEBUG com.browserstack.testOps.Listener - [ TESTHUB ] Build creation successfull
+17:52:35.215 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+17:52:35.244 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+17:52:35.299 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+17:52:35.790 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+17:52:35.790 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+17:52:35.790 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+17:52:35.857 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+17:52:35.857 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+17:52:35.857 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+17:52:35.905 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+17:52:35.906 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+17:52:35.906 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+17:52:36.337 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+17:52:36.542 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+17:52:36.547 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+17:52:36.748 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 409ms
+17:52:36.808 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 264ms
+17:52:37.714 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 962ms
+17:52:37.852 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 1303ms
+17:52:37.873 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 1060ms
+17:52:39.203 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 1488ms
+17:52:39.204 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+17:52:39.265 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 1409ms
+17:52:39.965 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 2091ms
+17:52:39.968 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+17:52:41.192 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 1926ms
+17:52:41.193 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+17:52:41.697 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:52:41.699 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - beforeDriverInit: SDK enabled. Thread ID: 24
+17:52:41.702 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:52:43.668 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:52:43.670 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - beforeDriverInit: SDK enabled. Thread ID: 24
+17:52:43.675 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:52:44.303 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:52:44.304 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - beforeDriverInit: SDK enabled. Thread ID: 24
+17:52:44.305 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:52:46.804 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - OPTIMAL HUB IS: hub-aps.browserstack.com
+17:52:46.804 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - afterDriverInit: requested
+17:52:46.831 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+17:52:46.831 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-aps.browserstack.com/wd/hub
+17:52:49.725 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Serenity
+17:52:49.725 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+17:52:53.924 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - OPTIMAL HUB IS: hub-aps.browserstack.com
+17:52:53.924 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - afterDriverInit: requested
+17:52:53.946 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+17:52:53.946 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-aps.browserstack.com/wd/hub
+17:52:56.322 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - OPTIMAL HUB IS: hub-aps.browserstack.com
+17:52:56.322 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - afterDriverInit: requested
+17:52:56.354 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+17:52:56.354 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-aps.browserstack.com/wd/hub
+17:52:59.521 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Serenity
+17:52:59.521 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+17:53:04.240 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Serenity
+17:53:04.240 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+17:53:04.784 [Thread-0] DEBUG c.browserstack.BrowserStackJavaAgent - Starting final execution
+17:53:04.785 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+17:53:04.788 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind stopBuildUpstream
+17:53:04.788 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: PUT api/v1/builds/ayufti399a9zhqluxhiurcp232uvwyovvdk8fedu/stop with request size 65
+17:53:05.021 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 401
+17:53:05.021 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [OBSERVABILITY] Non-200 Response 401
+17:53:05.023 [Thread-0] DEBUG c.browserstack.utils.LogReportingAPI - Observability Stop request failed. Retrying.. Exception: com.browserstack.testOps.RequestException: Non 200 response
+	at com.browserstack.testOps.RequestException.non200(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOps(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOpsString(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.stop(Unknown Source)
+	at com.browserstack.testOps.Listener.onComplete(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.browserstack.utils.ConditionalInvocationHandler.invoke(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy3.onComplete(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+17:53:05.992 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event Observability_Crash_Report_Upload response - OK
+17:53:05.992 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: PUT api/v1/builds/ayufti399a9zhqluxhiurcp232uvwyovvdk8fedu/stop with request size 65
+17:53:06.279 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 401
+17:53:06.280 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [OBSERVABILITY] Non-200 Response 401
+17:53:06.280 [Thread-0] DEBUG c.browserstack.utils.LogReportingAPI - 
+[2024-08-20T12:23:06.280539100Z][ TESTHUB ] Exception in stop build request : com.browserstack.testOps.RequestException: Non 200 response
+	at com.browserstack.testOps.RequestException.non200(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOps(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOpsString(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.stop(Unknown Source)
+	at com.browserstack.testOps.Listener.onComplete(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.browserstack.utils.ConditionalInvocationHandler.invoke(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy3.onComplete(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+
+17:53:07.421 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event Observability_Crash_Report_Upload response - OK
+17:53:07.449 [Thread-0] DEBUG com.browserstack.testOps.UsageStats - getFormattedData: Collecting data for TestObservability
+17:53:07.491 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestSuccessful with data: {"event_type":"SDKTestSuccessful","accessKey":"s6cWBXB7pjZA7h9zeJPT","userName":"sonalijha_I7Wkp4","event_properties":{"product":"[automate]","buildName":"browserstack build","os":"Windows 11","languageVersion":"17.0.3","appiumVersion":"","frameworkDetectionInstrumentation":{"parseLoadClass":6,"parseDependencies":21},"language":"java","sdkRunId":"b2ca4c93-df93-4b11-9803-4dc5a9e3cb29","buildIdentifier":"#5","error":"[{\"tests\":{\"tests.BStackLocalTest-localTest\":\"unknown error: net::ERR_CONNECTION_REFUSED   (Session info: chrome=127.0.6533.73) Build info: version: '4.1.4', revision: '535d840ee2' System info: host: 'MANAS', ip: '192.168.1.35', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3' Driver info: org.openqa.selenium.remote.RemoteWebDriver Command: [fa3a64d30e3c29509f9ea67d9fc9f6ccebc7dbac, get {url=http:\\\/\\\/bs-local.com:45454\\\/}] Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: \\\/var\\\/folders\\\/yj\\\/h3bj394n2tn...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54993}, javascriptEnabled: true, networkConnectionEnabled: false, optimalHubUrl: hub-aps.browserstack.com, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: fa3a64d30e3c29509f9ea67d9fc...} Session ID: fa3a64d30e3c29509f9ea67d9fc9f6ccebc7dbac\"},\"os\":\"OS X\",\"osVersion\":\"Big Sur\",\"browser\":\"Chrome\",\"browserVersion\":\"latest\",\"productUsage\":{\"testObservability\":{\"hookStartedStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"cbtSessionStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"logStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"testFinishedStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"batchStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"launchBuildUsage\":{\"triggered\":null,\"error\":null,\"status\":null},\"stopBuildUsage\":{\"triggered\":null,\"error\":null,\"status\":null},\"testStartedStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"hookFinishedStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0}}}},{\"tests\":{\"tests.BStackLocalTest-localTest\":\"unknown error: net::ERR_CONNECTION_REFUSED   (Session info: MicrosoftEdge=127.0.2651.74) Build info: version: '4.1.4', revision: '535d840ee2' System info: host: 'MANAS', ip: '192.168.1.35', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3' Driver info: org.openqa.selenium.remote.RemoteWebDriver Command: [cfa8d725eb43b33def40fcef585d1b3ea27ff5a6, get {url=http:\\\/\\\/bs-local.com:45454\\\/}] Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 127.0.2651.74, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:3027}, msedge: {msedgedriverVersion: 127.0.2651.74 (dbf5b0aa014c..., userDataDir: C:\\\\Windows\\\\proxy\\\\scoped_dir...}, networkConnectionEnabled: false, optimalHubUrl: hub-aps.browserstack.com, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: cfa8d725eb43b33def40fcef585...} Session ID: cfa8d725eb43b33def40fcef585d1b3ea27ff5a6\"},\"os\":\"Windows\",\"osVersion\":\"10\",\"browser\":\"Edge\",\"browserVersion\":\"latest\",\"productUsage\":{\"testObservability\":{\"hookStartedStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"cbtSessionStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"logStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"testFinishedStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"batchStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"launchBuildUsage\":{\"triggered\":null,\"error\":null,\"status\":null},\"stopBuildUsage\":{\"triggered\":null,\"error\":null,\"status\":null},\"testStartedStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"hookFinishedStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0}}}},{\"tests\":{\"tests.BStackLocalTest-localTest\":\"Local content not validated! ==> expected: <true> but was: <false>\"},\"osVersion\":\"12.0\",\"browser\":\"chrome\",\"productUsage\":{\"testObservability\":{\"hookStartedStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"cbtSessionStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"logStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"testFinishedStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"batchStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"launchBuildUsage\":{\"triggered\":null,\"error\":null,\"status\":null},\"stopBuildUsage\":{\"triggered\":null,\"error\":null,\"status\":null},\"testStartedStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0},\"hookFinishedStats\":{\"triggeredCount\":0,\"failedCount\":0,\"errors\":[],\"sentCount\":0}}},\"deviceName\":\"Samsung Galaxy S22 Ultra\"}]","userFramework":"junit5","testhub_uuid":"ayufti399a9zhqluxhiurcp232uvwyovvdk8fedu","detectedAppiumVersion":"null","detectedDependencies":"","productMap":{"app_automate":false,"accessibility":false,"automate":true,"percy":false,"observability":false},"referrer":"junit5-javaagent\/1.21.1","hostname":"Manas","measures":{"sdk:setup":5350},"language_framework":"java_junit5","detectedFramework":"junit5","productUsage":{"testObservability":{"buildHashedId":"ayufti399a9zhqluxhiurcp232uvwyovvdk8fedu","manuallySet":false,"enabled":false}},"detectedSeleniumVersion":"4.1.4","browserStackConfig":{"browserstackLocal":false,"percy":false,"logLevel":"info","staticWebDriver":true,"autoDetectFramework":true,"percyCaptureMode":"MANUAL","browserStackLocalOptions":null,"percyOptions":null,"testContextOptions":{"skipSessionStatus":false,"serenityOverridePlugin":false,"skipSessionName":false},"platforms":[{"capabilities":{},"browser":"Chrome","browserVersion":"latest","os":"OS X","device":null,"osVersion":"Big Sur","platformCaps":{"os":"OS X","osVersion":"Big Sur","browserVersion":"latest","browserName":"Chrome"},"platformString":"OS X, Big Sur, Chrome, latest","customVariables":"****"},{"capabilities":{},"browser":"Edge","browserVersion":"latest","os":"Windows","device":null,"osVersion":"10","platformCaps":{"os":"Windows","osVersion":10,"browserVersion":"latest","browserName":"Edge"},"platformString":"Windows, 10, Edge, latest","customVariables":"****"},{"capabilities":{"deviceName":"Samsung Galaxy S22 Ultra"},"browser":"chrome","browserVersion":null,"os":null,"device":"Samsung Galaxy S22 Ultra","osVersion":"12.0","platformCaps":{"osVersion":12.0,"browserName":"chrome","deviceName":"Samsung Galaxy S22 Ultra"},"platformString":"Samsung Galaxy S22 Ultra, 12.0, chrome","customVariables":"****"}],"parallelsPerPlatform":1,"framework":"junit5","accessibility":false,"accessibilityOptions":{},"turboScaleOptions":{},"disableAutoCaptureLogs":true,"testObservability":true,"browserstackAutomation":true,"turboScale":false,"testObservabilityOptions":{},"gradleMConfig":null,"proxySettings":null},"seleniumVersion":"4.1.4"}}
+17:53:07.919 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestSuccessful response - {"message":"SDK Event recorded successfully"}
+17:53:09.622 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Server side buildName(browserstack build  5) is not same as client side buildName(browserstack build #5)
+17:53:09.624 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack Gradle-M Config File does not exist.
+17:53:31.575 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+17:53:31.879 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+17:53:31.879 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+17:53:32.295 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Java command - org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 52694 -testLoaderClass org.eclipse.jdt.internal.junit5.runner.JUnit5TestLoader -loaderpluginname org.eclipse.jdt.junit5.runtime -classNames tests.BStackLocalTest
+17:53:32.296 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Test classes detected: tests.BStackLocalTest
+17:53:32.302 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Runner: junit5, Engine: none
+17:53:32.327 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Runner: junit5, Engine: none from dependencies
+17:53:32.327 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Detected final framework as: junit5
+17:53:32.327 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+17:53:32.330 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for INT
+17:53:32.330 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for TERM
+17:53:32.330 [main] DEBUG c.b.utils.ExitSignalHandler - Unable to attach signal handler for HUP Unknown signal: HUP
+17:53:32.330 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for ABRT
+17:53:32.766 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+17:53:33.007 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 239ms
+17:53:34.646 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 1636ms
+17:53:35.837 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 1190ms
+17:53:35.839 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+17:53:35.853 [main] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestAttempted with data: {"event_type":"SDKTestAttempted","accessKey":"s6cWBXB7pjZA7h9zeJPT","userName":"sonalijha_I7Wkp4","event_properties":{"product":"[automate]","buildName":"browserstack build","os":"Windows 11","languageVersion":"17.0.3","appiumVersion":"","frameworkDetectionInstrumentation":{"parseLoadClass":5,"parseDependencies":24},"language":"java","sdkRunId":"f9e7a9e3-b14b-404b-a881-b50de0f92b70","buildIdentifier":"#6","userFramework":"junit5","testhub_uuid":"","detectedAppiumVersion":"null","detectedDependencies":"","productMap":{"app_automate":false,"accessibility":false,"automate":true,"percy":false,"observability":false},"referrer":"junit5-javaagent\/1.21.1","hostname":"Manas","language_framework":"java_junit5","detectedFramework":"junit5","detectedSeleniumVersion":"4.1.4","seleniumVersion":"4.1.4"}}
+17:53:36.261 [main] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestAttempted response - {"message":"SDK Event recorded successfully"}
+17:53:36.274 [main] DEBUG c.browserstack.utils.UtilityMethods - Exception in getting the framework version. Error: java.lang.NullPointerException: Cannot invoke "String.split(String)" because "<parameter1>" is null
+17:53:36.278 [main] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind launchTestSession
+17:53:36.278 [main] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: POST api/v2/builds with request size 730
+17:53:37.726 [main] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 200
+17:53:37.728 [main] DEBUG com.browserstack.testOps.Listener - BROWSERSTACK_TESTHUB_UUID : 3k9yjoglchb3mjxea0zmh8ggkomejhx0ljpmyfsd
+17:53:37.730 [main] DEBUG com.browserstack.testOps.Listener - [ TESTHUB ] Build creation successfull
+17:53:37.759 [main] DEBUG com.browserstack.LocalFactory - Starting BrowserStack Local with identifier 20_Aug_1753_Manas_0PG4
+17:53:44.463 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+17:53:44.481 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+17:53:44.529 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+17:53:44.916 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+17:53:44.916 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+17:53:44.916 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+17:53:45.083 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+17:53:45.083 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+17:53:45.083 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+17:53:45.226 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+17:53:45.226 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+17:53:45.226 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+17:53:45.406 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+17:53:45.715 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+17:53:45.768 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 360ms
+17:53:45.821 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+17:53:45.949 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 232ms
+17:53:46.059 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 233ms
+17:53:46.729 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 957ms
+17:53:47.343 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 1390ms
+17:53:47.344 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 1282ms
+17:53:48.275 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 1545ms
+17:53:48.277 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+17:53:48.666 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 1321ms
+17:53:48.681 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+17:53:50.004 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 2659ms
+17:53:50.012 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+17:53:51.026 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:53:51.028 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - beforeDriverInit: SDK enabled. Thread ID: 24
+17:53:51.031 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:53:53.112 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:53:53.114 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - beforeDriverInit: SDK enabled. Thread ID: 24
+17:53:53.119 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:53:53.669 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:53:53.670 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - beforeDriverInit: SDK enabled. Thread ID: 24
+17:53:53.672 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:54:01.345 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - OPTIMAL HUB IS: hub-aps.browserstack.com
+17:54:01.345 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - afterDriverInit: requested
+17:54:01.368 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+17:54:01.369 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-aps.browserstack.com/wd/hub
+17:54:04.892 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - OPTIMAL HUB IS: hub-aps.browserstack.com
+17:54:04.892 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - afterDriverInit: requested
+17:54:04.917 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+17:54:04.918 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-aps.browserstack.com/wd/hub
+17:54:07.405 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Serenity
+17:54:07.405 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+17:54:10.022 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - OPTIMAL HUB IS: hub-euw.browserstack.com
+17:54:10.023 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - afterDriverInit: requested
+17:54:10.052 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+17:54:10.052 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-aps.browserstack.com/wd/hub
+17:54:11.539 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Serenity
+17:54:11.540 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+17:54:42.758 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Serenity
+17:54:42.759 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+17:54:43.132 [Thread-0] DEBUG c.browserstack.BrowserStackJavaAgent - Starting final execution
+17:54:43.133 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+17:54:43.138 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind stopBuildUpstream
+17:54:43.139 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: PUT api/v1/builds/3k9yjoglchb3mjxea0zmh8ggkomejhx0ljpmyfsd/stop with request size 65
+17:54:50.440 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 401
+17:54:50.440 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [OBSERVABILITY] Non-200 Response 401
+17:54:50.442 [Thread-0] DEBUG c.browserstack.utils.LogReportingAPI - Observability Stop request failed. Retrying.. Exception: com.browserstack.testOps.RequestException: Non 200 response
+	at com.browserstack.testOps.RequestException.non200(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOps(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOpsString(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.stop(Unknown Source)
+	at com.browserstack.testOps.Listener.onComplete(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.browserstack.utils.ConditionalInvocationHandler.invoke(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy3.onComplete(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+17:54:51.410 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event Observability_Crash_Report_Upload response - OK
+17:54:51.411 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: PUT api/v1/builds/3k9yjoglchb3mjxea0zmh8ggkomejhx0ljpmyfsd/stop with request size 65
+17:54:51.758 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 401
+17:54:51.758 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [OBSERVABILITY] Non-200 Response 401
+17:54:51.758 [Thread-0] DEBUG c.browserstack.utils.LogReportingAPI - 
+[2024-08-20T12:24:51.758084600Z][ TESTHUB ] Exception in stop build request : com.browserstack.testOps.RequestException: Non 200 response
+	at com.browserstack.testOps.RequestException.non200(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOps(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOpsString(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.stop(Unknown Source)
+	at com.browserstack.testOps.Listener.onComplete(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.browserstack.utils.ConditionalInvocationHandler.invoke(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy3.onComplete(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+
+17:54:52.775 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event Observability_Crash_Report_Upload response - OK
+17:54:54.678 [Thread-0] DEBUG com.browserstack.testOps.UsageStats - getFormattedData: Collecting data for TestObservability
+17:54:54.716 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestSuccessful with data: {"event_type":"SDKTestSuccessful","accessKey":"s6cWBXB7pjZA7h9zeJPT","userName":"sonalijha_I7Wkp4","event_properties":{"product":"[automate]","buildName":"browserstack build","os":"Windows 11","languageVersion":"17.0.3","appiumVersion":"","frameworkDetectionInstrumentation":{"parseLoadClass":5,"parseDependencies":24},"language":"java","sdkRunId":"f9e7a9e3-b14b-404b-a881-b50de0f92b70","buildIdentifier":"#6","userFramework":"junit5","testhub_uuid":"3k9yjoglchb3mjxea0zmh8ggkomejhx0ljpmyfsd","detectedAppiumVersion":"null","detectedDependencies":"","productMap":{"app_automate":false,"accessibility":false,"automate":true,"percy":false,"observability":false},"referrer":"junit5-javaagent\/1.21.1","hostname":"Manas","measures":{"local:start":5040,"sdk:setup":5473,"local:stop":1883},"language_framework":"java_junit5","detectedFramework":"junit5","productUsage":{"testObservability":{"buildHashedId":"3k9yjoglchb3mjxea0zmh8ggkomejhx0ljpmyfsd","manuallySet":false,"enabled":false}},"detectedSeleniumVersion":"4.1.4","browserStackConfig":{"browserstackLocal":true,"percy":false,"logLevel":"info","staticWebDriver":true,"autoDetectFramework":true,"percyCaptureMode":"MANUAL","browserStackLocalOptions":{"localIdentifier":"20_Aug_1753_Manas_0PG4","key":"****"},"percyOptions":null,"testContextOptions":{"skipSessionStatus":false,"serenityOverridePlugin":false,"skipSessionName":false},"platforms":[{"capabilities":{},"browserVersion":"latest","browser":"Chrome","osVersion":"Big Sur","device":null,"os":"OS X","platformCaps":{"os":"OS X","osVersion":"Big Sur","browserVersion":"latest","browserName":"Chrome"},"platformString":"OS X, Big Sur, Chrome, latest","customVariables":"****"},{"capabilities":{},"browserVersion":"latest","browser":"Edge","osVersion":"10","device":null,"os":"Windows","platformCaps":{"os":"Windows","osVersion":10,"browserVersion":"latest","browserName":"Edge"},"platformString":"Windows, 10, Edge, latest","customVariables":"****"},{"capabilities":{"deviceName":"Samsung Galaxy S22 Ultra"},"browserVersion":null,"browser":"chrome","osVersion":"12.0","device":"Samsung Galaxy S22 Ultra","os":null,"platformCaps":{"osVersion":12.0,"browserName":"chrome","deviceName":"Samsung Galaxy S22 Ultra"},"platformString":"Samsung Galaxy S22 Ultra, 12.0, chrome","customVariables":"****"}],"parallelsPerPlatform":1,"framework":"junit5","accessibility":false,"accessibilityOptions":{},"turboScaleOptions":{},"disableAutoCaptureLogs":true,"testObservability":true,"browserstackAutomation":true,"turboScale":false,"testObservabilityOptions":{},"gradleMConfig":null,"proxySettings":null},"seleniumVersion":"4.1.4"}}
+17:54:55.354 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestSuccessful response - {"message":"SDK Event recorded successfully"}
+17:54:57.499 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Server side buildName(browserstack build  6) is not same as client side buildName(browserstack build #6)
+17:54:57.501 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack Gradle-M Config File does not exist.
+17:56:25.033 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+17:56:25.351 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+17:56:25.353 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+17:56:25.759 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Java command - org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 52936 -testLoaderClass org.eclipse.jdt.internal.junit5.runner.JUnit5TestLoader -loaderpluginname org.eclipse.jdt.junit5.runtime -classNames tests.BStackSampleTest
+17:56:25.760 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Test classes detected: tests.BStackSampleTest
+17:56:25.792 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Runner: junit5, Engine: none
+17:56:25.816 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Runner: junit5, Engine: none from dependencies
+17:56:25.816 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Detected final framework as: junit5
+17:56:25.816 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+17:56:25.819 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for INT
+17:56:25.819 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for TERM
+17:56:25.819 [main] DEBUG c.b.utils.ExitSignalHandler - Unable to attach signal handler for HUP Unknown signal: HUP
+17:56:25.819 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for ABRT
+17:56:26.249 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+17:56:26.557 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 306ms
+17:56:27.754 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 1194ms
+17:56:29.057 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 1302ms
+17:56:29.058 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+17:56:29.072 [main] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestAttempted with data: {"event_type":"SDKTestAttempted","accessKey":"s6cWBXB7pjZA7h9zeJPT","userName":"sonalijha_I7Wkp4","event_properties":{"product":"[automate]","buildName":"browserstack build","os":"Windows 11","languageVersion":"17.0.3","appiumVersion":"","frameworkDetectionInstrumentation":{"parseLoadClass":31,"parseDependencies":24},"language":"java","sdkRunId":"b61ac3ff-8498-476a-a564-efddb39d2811","buildIdentifier":"#7","userFramework":"junit5","testhub_uuid":"","detectedAppiumVersion":"null","detectedDependencies":"","productMap":{"app_automate":false,"accessibility":false,"automate":true,"percy":false,"observability":false},"referrer":"junit5-javaagent\/1.21.1","hostname":"Manas","language_framework":"java_junit5","detectedFramework":"junit5","detectedSeleniumVersion":"4.1.4","seleniumVersion":"4.1.4"}}
+17:56:29.768 [main] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestAttempted response - {"message":"SDK Event recorded successfully"}
+17:56:29.784 [main] DEBUG c.browserstack.utils.UtilityMethods - Exception in getting the framework version. Error: java.lang.NullPointerException: Cannot invoke "String.split(String)" because "<parameter1>" is null
+17:56:29.790 [main] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind launchTestSession
+17:56:29.790 [main] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: POST api/v2/builds with request size 730
+17:56:30.999 [main] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 200
+17:56:31.000 [main] DEBUG com.browserstack.testOps.Listener - BROWSERSTACK_TESTHUB_UUID : e4tqhnywy8m8plbpdx98b2sthdvliteyx1gd3gji
+17:56:31.002 [main] DEBUG com.browserstack.testOps.Listener - [ TESTHUB ] Build creation successfull
+17:56:31.005 [main] DEBUG com.browserstack.LocalFactory - Starting BrowserStack Local with identifier 20_Aug_1756_Manas_KRuL
+17:56:37.670 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+17:56:37.873 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+17:56:38.060 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+17:56:38.374 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+17:56:38.374 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+17:56:38.374 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+17:56:38.484 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+17:56:38.484 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+17:56:38.484 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+17:56:38.693 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+17:56:38.693 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+17:56:38.693 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+17:56:39.335 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+17:56:39.604 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 269ms
+17:56:39.999 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+17:56:40.141 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+17:56:40.236 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 232ms
+17:56:40.378 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 233ms
+17:56:40.491 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 887ms
+17:56:41.365 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 1124ms
+17:56:41.581 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 1199ms
+17:56:41.705 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 1213ms
+17:56:41.707 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+17:56:41.795 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+17:56:41.795 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+17:56:41.795 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+17:56:42.149 [Thread-3] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+17:56:42.402 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 252ms
+17:56:42.415 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 1049ms
+17:56:42.417 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+17:56:42.500 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+17:56:42.500 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+17:56:42.500 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+17:56:42.631 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 1049ms
+17:56:42.632 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+17:56:42.710 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+17:56:42.710 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+17:56:42.710 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+17:56:42.771 [Thread-3] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+17:56:43.027 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 254ms
+17:56:43.027 [Thread-3] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+17:56:43.291 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 263ms
+17:56:43.331 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 928ms
+17:56:44.279 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 1252ms
+17:56:44.912 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 1620ms
+17:56:45.156 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 1824ms
+17:56:45.156 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+17:56:45.637 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 1357ms
+17:56:45.639 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+17:56:46.007 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 1094ms
+17:56:46.007 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+17:56:50.790 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:56:50.790 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:56:50.793 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - beforeDriverInit: SDK enabled. Thread ID: 30
+17:56:50.795 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:56:50.795 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:56:50.795 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - beforeDriverInit: SDK enabled. Thread ID: 30
+17:56:50.795 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:56:50.795 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:56:52.797 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:56:52.797 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:56:52.802 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - beforeDriverInit: SDK enabled. Thread ID: 30
+17:56:52.804 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:56:52.805 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:56:52.805 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - beforeDriverInit: SDK enabled. Thread ID: 30
+17:56:52.805 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:56:52.805 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:56:53.040 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:56:53.040 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:56:53.042 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - beforeDriverInit: SDK enabled. Thread ID: 30
+17:56:53.046 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:56:53.046 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:56:53.047 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - beforeDriverInit: SDK enabled. Thread ID: 30
+17:56:53.047 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:56:53.047 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+17:56:59.178 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - OPTIMAL HUB IS: hub-aps.browserstack.com
+17:56:59.178 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - OPTIMAL HUB IS: hub-aps.browserstack.com
+17:56:59.178 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - afterDriverInit: requested
+17:56:59.206 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+17:56:59.206 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-aps.browserstack.com/wd/hub
+17:56:59.206 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - afterDriverInit: requested
+17:56:59.214 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+17:56:59.214 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-aps.browserstack.com/wd/hub
+17:57:05.672 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - OPTIMAL HUB IS: hub-aps.browserstack.com
+17:57:05.672 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - OPTIMAL HUB IS: hub-aps.browserstack.com
+17:57:05.672 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - afterDriverInit: requested
+17:57:05.751 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+17:57:05.751 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-aps.browserstack.com/wd/hub
+17:57:05.751 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - afterDriverInit: requested
+17:57:05.798 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+17:57:05.798 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-aps.browserstack.com/wd/hub
+17:57:09.828 [Thread-2] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Serenity
+17:57:09.828 [Thread-2] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+17:57:09.828 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Serenity
+17:57:09.828 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+17:57:09.875 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - OPTIMAL HUB IS: hub-aps.browserstack.com
+17:57:09.875 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - OPTIMAL HUB IS: hub-aps.browserstack.com
+17:57:09.875 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - afterDriverInit: requested
+17:57:09.954 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+17:57:09.954 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-aps.browserstack.com/wd/hub
+17:57:09.954 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - afterDriverInit: requested
+17:57:09.970 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+17:57:09.970 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-aps.browserstack.com/wd/hub
+17:57:16.611 [Thread-2] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Serenity
+17:57:16.611 [Thread-2] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+17:57:16.627 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Serenity
+17:57:16.627 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+17:57:23.511 [Thread-2] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Serenity
+17:57:23.511 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Serenity
+17:57:23.511 [Thread-2] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+17:57:23.511 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+17:57:24.075 [Thread-0] DEBUG c.browserstack.BrowserStackJavaAgent - Starting final execution
+17:57:24.075 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+17:57:24.090 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind stopBuildUpstream
+17:57:24.090 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: PUT api/v1/builds/e4tqhnywy8m8plbpdx98b2sthdvliteyx1gd3gji/stop with request size 65
+17:57:24.434 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 401
+17:57:24.434 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [OBSERVABILITY] Non-200 Response 401
+17:57:24.434 [Thread-0] DEBUG c.browserstack.utils.LogReportingAPI - Observability Stop request failed. Retrying.. Exception: com.browserstack.testOps.RequestException: Non 200 response
+	at com.browserstack.testOps.RequestException.non200(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOps(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOpsString(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.stop(Unknown Source)
+	at com.browserstack.testOps.Listener.onComplete(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.browserstack.utils.ConditionalInvocationHandler.invoke(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy3.onComplete(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+17:57:25.357 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event Observability_Crash_Report_Upload response - OK
+17:57:25.357 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: PUT api/v1/builds/e4tqhnywy8m8plbpdx98b2sthdvliteyx1gd3gji/stop with request size 65
+17:57:25.576 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 401
+17:57:25.576 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [OBSERVABILITY] Non-200 Response 401
+17:57:25.576 [Thread-0] DEBUG c.browserstack.utils.LogReportingAPI - 
+[2024-08-20T12:27:25.576767Z][ TESTHUB ] Exception in stop build request : com.browserstack.testOps.RequestException: Non 200 response
+	at com.browserstack.testOps.RequestException.non200(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOps(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOpsString(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.stop(Unknown Source)
+	at com.browserstack.testOps.Listener.onComplete(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.browserstack.utils.ConditionalInvocationHandler.invoke(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy3.onComplete(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+
+17:57:26.670 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event Observability_Crash_Report_Upload response - OK
+17:57:28.756 [Thread-0] DEBUG com.browserstack.testOps.UsageStats - getFormattedData: Collecting data for TestObservability
+17:57:28.803 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestSuccessful with data: {"event_type":"SDKTestSuccessful","accessKey":"s6cWBXB7pjZA7h9zeJPT","userName":"sonalijha_I7Wkp4","event_properties":{"product":"[automate]","buildName":"browserstack build","os":"Windows 11","languageVersion":"17.0.3","appiumVersion":"","frameworkDetectionInstrumentation":{"parseLoadClass":31,"parseDependencies":24},"language":"java","sdkRunId":"b61ac3ff-8498-476a-a564-efddb39d2811","buildIdentifier":"#7","userFramework":"junit5","testhub_uuid":"e4tqhnywy8m8plbpdx98b2sthdvliteyx1gd3gji","detectedAppiumVersion":"null","detectedDependencies":"","productMap":{"app_automate":false,"accessibility":false,"automate":true,"percy":false,"observability":false},"referrer":"junit5-javaagent\/1.21.1","hostname":"Manas","measures":{"local:start":5081,"sdk:setup":5061,"local:stop":2071},"language_framework":"java_junit5","detectedFramework":"junit5","productUsage":{"testObservability":{"buildHashedId":"e4tqhnywy8m8plbpdx98b2sthdvliteyx1gd3gji","manuallySet":false,"enabled":false}},"detectedSeleniumVersion":"4.1.4","browserStackConfig":{"browserstackLocal":true,"percy":false,"logLevel":"info","staticWebDriver":true,"autoDetectFramework":true,"percyCaptureMode":"MANUAL","browserStackLocalOptions":{"localIdentifier":"20_Aug_1756_Manas_KRuL","key":"****"},"percyOptions":null,"testContextOptions":{"skipSessionStatus":false,"serenityOverridePlugin":false,"skipSessionName":false},"platforms":[{"capabilities":{},"os":"OS X","device":null,"osVersion":"Big Sur","browserVersion":"latest","browser":"Chrome","platformCaps":{"os":"OS X","osVersion":"Big Sur","browserVersion":"latest","browserName":"Chrome"},"platformString":"OS X, Big Sur, Chrome, latest","customVariables":"****"},{"capabilities":{},"os":"Windows","device":null,"osVersion":"10","browserVersion":"latest","browser":"Edge","platformCaps":{"os":"Windows","osVersion":10,"browserVersion":"latest","browserName":"Edge"},"platformString":"Windows, 10, Edge, latest","customVariables":"****"},{"capabilities":{"deviceName":"Samsung Galaxy S22 Ultra"},"os":null,"device":"Samsung Galaxy S22 Ultra","osVersion":"12.0","browserVersion":null,"browser":"chrome","platformCaps":{"osVersion":12.0,"browserName":"chrome","deviceName":"Samsung Galaxy S22 Ultra"},"platformString":"Samsung Galaxy S22 Ultra, 12.0, chrome","customVariables":"****"}],"parallelsPerPlatform":1,"framework":"junit5","accessibility":false,"accessibilityOptions":{},"turboScaleOptions":{},"disableAutoCaptureLogs":true,"testObservability":true,"browserstackAutomation":true,"turboScale":false,"testObservabilityOptions":{},"gradleMConfig":null,"proxySettings":null},"seleniumVersion":"4.1.4"}}
+17:57:29.117 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestSuccessful response - {"message":"SDK Event recorded successfully"}
+17:57:31.140 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Server side buildName(browserstack build  7) is not same as client side buildName(browserstack build #7)
+17:57:31.140 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack Gradle-M Config File does not exist.
+20:26:15.891 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+20:26:16.295 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+20:26:16.296 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+20:26:16.619 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Java command - org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 59613 -testLoaderClass org.eclipse.jdt.internal.junit5.runner.JUnit5TestLoader -loaderpluginname org.eclipse.jdt.junit5.runtime -classNames tests.BStackSampleTest
+20:26:16.619 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Test classes detected: tests.BStackSampleTest
+20:26:16.675 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Runner: junit5, Engine: none
+20:26:16.701 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Runner: junit5, Engine: none from dependencies
+20:26:16.701 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Detected final framework as: junit5
+20:26:16.701 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+20:26:16.703 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for INT
+20:26:16.703 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for TERM
+20:26:16.703 [main] DEBUG c.b.utils.ExitSignalHandler - Unable to attach signal handler for HUP Unknown signal: HUP
+20:26:16.704 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for ABRT
+20:26:17.170 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+20:26:17.402 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 229ms
+20:26:18.664 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 1231ms
+20:26:19.843 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 1178ms
+20:26:19.845 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+20:26:19.892 [main] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestAttempted with data: {"event_type":"SDKTestAttempted","accessKey":"s6cWBXB7pjZA7h9zeJPT","userName":"sonalijha_I7Wkp4","event_properties":{"product":"[automate]","buildName":"browserstack build","os":"Windows 11","languageVersion":"17.0.3","appiumVersion":"","frameworkDetectionInstrumentation":{"parseLoadClass":29,"parseDependencies":26},"language":"java","sdkRunId":"ade29d7b-aa4a-43d2-95c4-186c93fd5fdc","buildIdentifier":"#8","userFramework":"junit5","testhub_uuid":"","detectedAppiumVersion":"null","detectedDependencies":"","productMap":{"app_automate":false,"accessibility":false,"automate":true,"percy":false,"observability":false},"referrer":"junit5-javaagent\/1.21.1","hostname":"Manas","language_framework":"java_junit5","detectedFramework":"junit5","detectedSeleniumVersion":"4.1.4","seleniumVersion":"4.1.4"}}
+20:26:20.317 [main] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestAttempted response - {"message":"SDK Event recorded successfully"}
+20:26:20.659 [main] DEBUG c.browserstack.utils.UtilityMethods - Exception in getting the framework version. Error: java.lang.NullPointerException: Cannot invoke "String.split(String)" because "<parameter1>" is null
+20:26:20.664 [main] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind launchTestSession
+20:26:20.665 [main] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: POST api/v2/builds with request size 1230
+20:26:21.538 [main] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 200
+20:26:21.538 [main] DEBUG com.browserstack.testOps.Listener - BROWSERSTACK_TESTHUB_UUID : 55ne2ycevtkpfwqdhvsjcabeuqhj8naisbw976gu
+20:26:21.538 [main] DEBUG com.browserstack.testOps.Listener - [ TESTHUB ] Build creation successfull
+20:26:21.563 [main] DEBUG com.browserstack.LocalFactory - Starting BrowserStack Local with identifier 02_Nov_2026_Manas_dTzd
+20:26:31.183 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+20:26:31.183 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+20:26:31.519 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+20:26:32.187 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+20:26:32.187 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+20:26:32.187 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+20:26:32.235 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+20:26:32.235 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+20:26:32.235 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+20:26:32.467 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+20:26:32.477 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+20:26:32.477 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+20:26:32.791 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+20:26:32.805 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+20:26:33.003 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 207ms
+20:26:33.019 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+20:26:33.027 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 219ms
+20:26:33.231 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 212ms
+20:26:34.028 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 1001ms
+20:26:34.031 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 1020ms
+20:26:34.180 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 941ms
+20:26:34.986 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 955ms
+20:26:34.988 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+20:26:35.006 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 975ms
+20:26:35.008 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+20:26:35.123 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 942ms
+20:26:35.124 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+20:26:35.153 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+20:26:35.153 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+20:26:35.153 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+20:26:35.155 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+20:26:35.155 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+20:26:35.155 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+20:26:35.258 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+20:26:35.258 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+20:26:35.258 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.21.1
+20:26:35.393 [Thread-3] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+20:26:35.507 [Thread-3] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+20:26:35.609 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 205ms
+20:26:35.726 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 217ms
+20:26:36.413 [Thread-3] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-aps.browserstack.com","hub-euw.browserstack.com","hub-apse.browserstack.com"]
+20:26:36.430 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 820ms
+20:26:36.570 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 843ms
+20:26:36.665 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 251ms
+20:26:37.410 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 979ms
+20:26:37.410 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+20:26:37.493 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 827ms
+20:26:37.527 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 956ms
+20:26:37.527 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+20:26:38.431 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-apse.browserstack.com HUB IS: 938ms
+20:26:38.446 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-aps.browserstack.com
+20:26:45.742 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+20:26:45.742 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+20:26:45.758 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - beforeDriverInit: SDK enabled. Thread ID: 30
+20:26:45.758 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+20:26:45.758 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+20:26:45.758 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - beforeDriverInit: SDK enabled. Thread ID: 30
+20:26:45.758 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+20:26:45.758 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+20:26:45.864 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+20:26:45.864 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+20:26:45.864 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - beforeDriverInit: SDK enabled. Thread ID: 30
+20:26:45.864 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+20:26:45.864 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+20:26:45.864 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - beforeDriverInit: SDK enabled. Thread ID: 30
+20:26:45.864 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+20:26:45.864 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+20:26:46.194 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+20:26:46.194 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+20:26:46.204 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - beforeDriverInit: SDK enabled. Thread ID: 30
+20:26:46.208 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+20:26:46.208 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+20:26:46.208 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - beforeDriverInit: SDK enabled. Thread ID: 30
+20:26:46.208 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+20:26:46.208 [ForkJoinPool-1-worker-1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+20:26:51.709 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - OPTIMAL HUB IS: hub-aps.browserstack.com
+20:26:51.709 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - OPTIMAL HUB IS: hub-aps.browserstack.com
+20:26:51.709 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - afterDriverInit: requested
+20:26:51.751 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+20:26:51.751 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-aps.browserstack.com/wd/hub
+20:26:51.751 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - afterDriverInit: requested
+20:26:51.758 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+20:26:51.758 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-aps.browserstack.com/wd/hub
+20:26:57.245 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - OPTIMAL HUB IS: hub-aps.browserstack.com
+20:26:57.245 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - OPTIMAL HUB IS: hub-aps.browserstack.com
+20:26:57.245 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - afterDriverInit: requested
+20:26:57.277 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+20:26:57.277 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-aps.browserstack.com/wd/hub
+20:26:57.277 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - afterDriverInit: requested
+20:26:57.285 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+20:26:57.285 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-aps.browserstack.com/wd/hub
+20:26:59.259 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Serenity
+20:26:59.260 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+20:26:59.262 [Thread-2] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Serenity
+20:26:59.263 [Thread-2] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+20:26:59.451 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - OPTIMAL HUB IS: hub-aps.browserstack.com
+20:26:59.451 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - OPTIMAL HUB IS: hub-aps.browserstack.com
+20:26:59.452 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - afterDriverInit: requested
+20:26:59.490 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+20:26:59.490 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-aps.browserstack.com/wd/hub
+20:26:59.491 [ForkJoinPool-1-worker-1] DEBUG c.b.selenium.SeleniumHandler - afterDriverInit: requested
+20:26:59.505 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+20:26:59.505 [ForkJoinPool-1-worker-1] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-aps.browserstack.com/wd/hub
+20:27:06.562 [Thread-2] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Serenity
+20:27:06.562 [Thread-2] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+20:27:06.563 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Serenity
+20:27:06.563 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+20:27:07.624 [Thread-2] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Serenity
+20:27:07.624 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Serenity
+20:27:07.624 [Thread-2] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+20:27:07.624 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+20:27:08.190 [Thread-0] DEBUG c.browserstack.BrowserStackJavaAgent - Starting final execution
+20:27:08.191 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+20:27:08.195 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind stopBuildUpstream
+20:27:08.195 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: PUT api/v1/builds/55ne2ycevtkpfwqdhvsjcabeuqhj8naisbw976gu/stop with request size 65
+20:27:08.418 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 401
+20:27:08.418 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [OBSERVABILITY] Non-200 Response 401
+20:27:08.423 [Thread-0] DEBUG c.browserstack.utils.LogReportingAPI - Observability Stop request failed. Retrying.. Exception: com.browserstack.testOps.RequestException: Non 200 response
+	at com.browserstack.testOps.RequestException.non200(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOps(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOpsString(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.stop(Unknown Source)
+	at com.browserstack.testOps.Listener.onComplete(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.browserstack.utils.ConditionalInvocationHandler.invoke(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy3.onComplete(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+20:27:09.250 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event Observability_Crash_Report_Upload response - OK
+20:27:09.250 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: PUT api/v1/builds/55ne2ycevtkpfwqdhvsjcabeuqhj8naisbw976gu/stop with request size 65
+20:27:09.556 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 401
+20:27:09.556 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [OBSERVABILITY] Non-200 Response 401
+20:27:09.556 [Thread-0] DEBUG c.browserstack.utils.LogReportingAPI - 
+[2024-11-02T14:57:09.556413100Z][ TESTHUB ] Exception in stop build request : com.browserstack.testOps.RequestException: Non 200 response
+	at com.browserstack.testOps.RequestException.non200(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOps(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOpsString(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.stop(Unknown Source)
+	at com.browserstack.testOps.Listener.onComplete(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.browserstack.utils.ConditionalInvocationHandler.invoke(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy3.onComplete(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+
+20:27:10.326 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event Observability_Crash_Report_Upload response - OK
+20:27:12.441 [Thread-0] DEBUG com.browserstack.testOps.UsageStats - getFormattedData: Collecting data for TestObservability
+20:27:12.498 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestSuccessful with data: {"event_type":"SDKTestSuccessful","accessKey":"s6cWBXB7pjZA7h9zeJPT","userName":"sonalijha_I7Wkp4","event_properties":{"product":"[automate]","buildName":"browserstack build","os":"Windows 11","languageVersion":"17.0.3","appiumVersion":"","frameworkDetectionInstrumentation":{"parseLoadClass":29,"parseDependencies":26},"language":"java","sdkRunId":"ade29d7b-aa4a-43d2-95c4-186c93fd5fdc","buildIdentifier":"#8","userFramework":"junit5","testhub_uuid":"55ne2ycevtkpfwqdhvsjcabeuqhj8naisbw976gu","detectedAppiumVersion":"null","detectedDependencies":"","productMap":{"app_automate":false,"accessibility":false,"automate":true,"percy":false,"observability":false},"referrer":"junit5-javaagent\/1.21.1","hostname":"Manas","measures":{"local:start":7388,"sdk:setup":4830,"local:stop":2078},"language_framework":"java_junit5","detectedFramework":"junit5","productUsage":{"testObservability":{"buildHashedId":"55ne2ycevtkpfwqdhvsjcabeuqhj8naisbw976gu","manuallySet":false,"enabled":false}},"detectedSeleniumVersion":"4.1.4","browserStackConfig":{"browserstackLocal":true,"percy":false,"logLevel":"info","staticWebDriver":true,"autoDetectFramework":true,"percyCaptureMode":"MANUAL","browserStackLocalOptions":{"localIdentifier":"02_Nov_2026_Manas_dTzd","key":"****"},"percyOptions":null,"testContextOptions":{"skipSessionName":false,"skipSessionStatus":false,"serenityOverridePlugin":false},"platforms":[{"capabilities":{},"browser":"Chrome","browserVersion":"latest","os":"OS X","osVersion":"Big Sur","device":null,"platformCaps":{"os":"OS X","osVersion":"Big Sur","browserVersion":"latest","browserName":"Chrome"},"platformString":"OS X, Big Sur, Chrome, latest","customVariables":"****"},{"capabilities":{},"browser":"Edge","browserVersion":"latest","os":"Windows","osVersion":"10","device":null,"platformCaps":{"os":"Windows","osVersion":10,"browserVersion":"latest","browserName":"Edge"},"platformString":"Windows, 10, Edge, latest","customVariables":"****"},{"capabilities":{"deviceName":"Samsung Galaxy S22 Ultra"},"browser":"chrome","browserVersion":null,"os":null,"osVersion":"12.0","device":"Samsung Galaxy S22 Ultra","platformCaps":{"osVersion":12.0,"browserName":"chrome","deviceName":"Samsung Galaxy S22 Ultra"},"platformString":"Samsung Galaxy S22 Ultra, 12.0, chrome","customVariables":"****"}],"parallelsPerPlatform":1,"framework":"junit5","accessibility":false,"accessibilityOptions":{},"turboScaleOptions":{},"disableAutoCaptureLogs":true,"testObservability":true,"browserstackAutomation":true,"turboScale":false,"testObservabilityOptions":{},"gradleMConfig":null,"proxySettings":null},"seleniumVersion":"4.1.4"}}
+20:27:12.778 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestSuccessful response - {"message":"SDK Event recorded successfully"}
+20:27:14.372 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Server side buildName(browserstack build  8) is not same as client side buildName(browserstack build #8)
+20:27:14.374 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack Gradle-M Config File does not exist.
